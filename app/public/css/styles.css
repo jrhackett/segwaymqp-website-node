@@ -1,0 +1,103 @@
+body {
+	background-color: #1F0067;
+}
+
+.main-message {
+	text-align: center;
+}
+
+.main-message h1 {
+	color: white;
+}
+
+.choice-inner {
+	text-align: center;
+	margin: 40px;
+}
+
+.choices div:nth-of-type(1) .choice-inner {
+	background-color: #2d89ee;
+}
+
+.choices div:nth-of-type(2) .choice-inner {
+	background-color: #7e3877;
+}
+
+.choices div:nth-of-type(3) .choice-inner {
+	background-color: #00a301;
+}
+
+.choices div:nth-of-type(4) .choice-inner {
+	background-color: #2b5796;
+}
+
+.choices div:nth-of-type(5) .choice-inner {
+	background-color: #00aba8;
+}
+
+.choices div:nth-of-type(6) .choice-inner {
+	background-color: #b91d48;
+}
+
+.choice-inner a {
+	color: white;
+	font-size: 24px;
+	height: 100%;
+	width: 100%;
+}
+
+.choice-inner p {
+	color: white;
+	font-size: 30px;
+	position: absolute;
+	bottom: 70px;
+	left: 0;
+	right: 0;
+	width: 60%;
+	margin: 0 auto;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.choice-inner img {
+	width: 120px;
+	height: auto;
+	margin-top: 50px;
+}
+
+#message h2 {
+	font-size: 48px;
+	margin-bottom: 20px;
+	color: white;
+}
+
+.go-back {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	background-color: #b91d46;
+	padding: 30px;
+	font-size: 20px;
+}
+
+.go-back a {
+	color: white;
+}
+
+#last-name {
+	text-align: center;
+}
+
+#last-name input, .confirmations input {
+	padding: 10px;
+	font-size:30px;
+	text-align: center;
+	margin-top: 20px;
+}
+
+#input-name {
+	margin-right: 20px;
+}
+
+#last-name #input-submit {
+	padding: 12px;
+}
