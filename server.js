@@ -3,7 +3,7 @@ var express = require('express'),
   exphbs = require('express-handlebars'),
   http = require('http'),
   mongoose = require('mongoose'),
-  routes = require('./routes'),
+  bodyParser = require('body-parser'),
   config = require('./config'),
   path = require('path');
 
@@ -22,10 +22,12 @@ mongoose.Promise = global.Promise;
 // Connect to our mongo database
 mongoose.connect(config.database_url);
 
-require('./routes.js')(app);
-
 // Set /app/public as our static content dir
 app.use("/", express.static(__dirname + "/app/public/"));
+app.use(bodyParser());
+
+
+require('./routes.js')(app);
 
 // Fire it up (start our server)
 var server = http.createServer(app).listen(port, function() {
