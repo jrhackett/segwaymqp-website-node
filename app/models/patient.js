@@ -4,6 +4,7 @@ var mongoose = require('mongoose');
 var patientSchema = mongoose.Schema({
     first_name: { type: String, default: '' },
     last_name: { type: String, default: ''},
+    gender: {type: String, default: '' },
     checked: { type: Boolean, default: false }
 });
 

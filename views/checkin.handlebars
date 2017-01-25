@@ -4,26 +4,25 @@
 <div class = "container checkin">
 
 	{{#if patient}}
-		<h3 style = "color: white;">{{patient.first_name}}</h3>
-			<div class = "message text-center">
-				<h2>Is this you?</h2>
-			</div>
-			<div class = "row">
-				<div class = "col-lg-4 col-md-4 col-sm-4 col-xs-4 col-lg-offset-4 col-md-offset-4 col-sm-offset-4 col-xs-offset-4" id = "person">
-					<div class = "choice-inner">
-						<img id = "identification-picture" src = "assets/img/male.png" />
-						<p id = "identification-name">{{patient.first_name}} {{patient.last_name}}</p>
-					</div>
+		<div class = "message text-center">
+			<h2>Is this you?</h2>
+		</div>
+		<div class = "row">
+			<div class = "col-lg-4 col-md-4 col-sm-4 col-xs-4 col-lg-offset-4 col-md-offset-4 col-sm-offset-4 col-xs-offset-4" id = "person">
+				<div class = "choice-inner">
+					<img id = "identification-picture" src = "assets/img/male.png" />
+					<p id = "identification-name">{{patient.first_name}} {{patient.last_name}}</p>
 				</div>
 			</div>
-			<div class = "confirmations text-center">
-				<form method="post" action="/success">
+		</div>
+		<div class = "confirmations text-center">
+			<form method="post" action="/checkin_success">
 				<input type="submit" id = "no-id" value="No">
 				<input type="submit" id = "yes-id" value="Yes">
 				<input hidden type="text" name="patient_first_name" value="{{patient.first_name}}" />
 				<input hidden type="text" name="patient_last_name" value="{{patient.last_name}}" />
-			</div>
-
+			</form>
+		</div>
 	{{else}}
 		<div class = "message text-center">
 			<h2>What is your last name?</h2>
