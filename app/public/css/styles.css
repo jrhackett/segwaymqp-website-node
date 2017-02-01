@@ -13,6 +13,7 @@ body {
 .choice-inner {
 	text-align: center;
 	margin: 40px;
+	background-color: #2d89ee;
 }
 
 .choices div:nth-of-type(1) .choice-inner {
@@ -90,6 +91,10 @@ body {
 	text-align: center;
 }
 
+#last-name input {
+	border: 0;
+}
+
 #last-name input, .confirmations input {
 	padding: 10px;
 	font-size:30px;
@@ -107,4 +112,36 @@ body {
 
 #identification-name {
 	text-transform: capitalize;
+}
+
+#no-id {
+	margin-right: 60px;
+	background-color: #b91d46;
+}
+
+#yes-id {
+	background-color: #00a301;
+}
+
+#no-id, #yes-id {
+	color: white;
+	border: 0;
+	padding: 30px 40px;
+}
+
+select[name="destination"] {
+	font-size: 40px;
+  display: block;
+  max-width: 300px;
+  margin: 20px auto;
+}
+
+.directions_form {
+	text-align: center;
+}
+
+#input-submit {
+  background-color: #00a301;
+  border: 0;
+  color: white;
 }

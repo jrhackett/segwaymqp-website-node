@@ -58,4 +58,17 @@ module.exports = function(app) {
       // TODO add a picture to be shown here
     });
   });
+
+  app.get('/leadme', function(req, res) {
+    res.render('directions', {
+
+    });
+  });
+
+  app.post('/leadme', function(req, res) {
+    console.log("POST: leadme " + req.body.destination);
+    res.render('leadme', {
+      // TODO add a picture to be shown here
+    });
+  });
 };
