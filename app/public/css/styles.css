@@ -70,7 +70,7 @@ body {
 	margin-bottom: 20px;
 }
 
-.message h2, .message p {
+.message h2, .message p, .message h3 {
 	color: white;
 }
 
@@ -129,6 +129,19 @@ body {
 	padding: 30px 40px;
 }
 
+.btn-register {
+	color: white;
+	border: 0;
+	padding: 30px 40px;
+	background-color: #00a301;
+	border-radius: 0;
+	font-size: 20px;
+}
+
+.btn-register:hover {
+	color: white;
+}
+
 select[name="destination"] {
 	font-size: 40px;
   display: block;
@@ -144,4 +157,8 @@ select[name="destination"] {
   background-color: #00a301;
   border: 0;
   color: white;
+}
+
+.register {
+	margin-top: 40px;
 }

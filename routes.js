@@ -71,4 +71,23 @@ module.exports = function(app) {
       // TODO add a picture to be shown here
     });
   });
+
+  app.get('/register', function(req, res) {
+    res.render('register', {
+      
+    });
+  });
+
+  app.post('/register', function(req, res) {
+    var newPatient = Patient()
+    newPatient.first_name = req.body.input_first_name
+    newPatient.last_name = req.body.input_last_name
+    newPatient.gender = req.body.input_gender
+    newPatient.checked = true
+    newPatient.save(function(err) {
+      res.render('checkin_success', {
+        patient: newPatient
+      });
+    });
+  });
 };
