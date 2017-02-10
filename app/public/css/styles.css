@@ -12,7 +12,7 @@ body {
 
 .choice-inner {
 	text-align: center;
-	margin: 40px;
+	margin: 20px;
 	background-color: #2d89ee;
 }
 
@@ -60,7 +60,7 @@ body {
 }
 
 .choice-inner img {
-	width: 120px;
+	width: 80px;
 	height: auto;
 	margin-top: 50px;
 }
