@@ -54,7 +54,7 @@ module.exports = function(app) {
 
   app.post('/directions', function(req, res) {
     console.log("POST: directions " + req.body.destination);
-    res.render('directions', {
+    res.render('directions_success', {
       // TODO add a picture to be shown here
     });
   });
@@ -67,7 +67,7 @@ module.exports = function(app) {
 
   app.post('/leadme', function(req, res) {
     console.log("POST: leadme " + req.body.destination);
-    res.render('leadme', {
+    res.render('leadme_success', {
       // TODO add a picture to be shown here
     });
   });

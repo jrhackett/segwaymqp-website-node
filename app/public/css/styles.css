@@ -52,7 +52,7 @@ body {
 }
 
 .choice-inner img {
-	width: 80px;
+	width: 100px;
 	height: auto;
 	margin-top: 50px;
 }
@@ -121,7 +121,7 @@ body {
 	padding: 30px 40px;
 }
 
-.btn-register {
+.btn-register, #result a {
 	color: white;
 	border: 0;
 	padding: 30px 40px;
@@ -130,7 +130,7 @@ body {
 	font-size: 20px;
 }
 
-.btn-register:hover {
+.btn-register:hover, #result a:hover {
 	color: white;
 }
 
@@ -153,4 +153,9 @@ select[name="destination"] {
 
 .register {
 	margin-top: 40px;
+}
+
+#result h2 {
+  color: white;
+  margin-bottom: 80px;
 }
