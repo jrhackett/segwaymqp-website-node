@@ -16,28 +16,20 @@ body {
 	background-color: #2d89ee;
 }
 
-.choices div:nth-of-type(1) .choice-inner {
+.choices.top-choices div:nth-of-type(1) .choice-inner {
 	background-color: #2d89ee;
 }
 
-.choices div:nth-of-type(2) .choice-inner {
+.choices.top-choices div:nth-of-type(2) .choice-inner {
 	background-color: #7e3877;
 }
 
-.choices div:nth-of-type(3) .choice-inner {
+.choices.bottom-choices div:nth-of-type(1) .choice-inner {
 	background-color: #00a301;
 }
 
-.choices div:nth-of-type(4) .choice-inner {
-	background-color: #2b5796;
-}
-
-.choices div:nth-of-type(5) .choice-inner {
-	background-color: #00aba8;
-}
-
-.choices div:nth-of-type(6) .choice-inner {
-	background-color: #b91d48;
+.choices.bottom-choices div:nth-of-type(2) .choice-inner {
+	background-color: #b91d48; 
 }
 
 .choice-inner a {
